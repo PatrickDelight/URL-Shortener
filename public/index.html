@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>URL Shortener Microservice | freeCodeCamp.org</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../headshot.jpg"
+    />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>URL Shortener Microservice</h1>
+    <main>
+      <section>
+        <form action="api/shorturl/new" method="POST">
+          <fieldset>
+            <legend>URL Shortener: Original url</legend>
+            <label for="URL">URL:</label>
+            <input id="URL" type="text" name="url" placeholder="FORMAT of 'https://www.google.org/'" />
+            <button type="submit" value="POST URL">SUBMIT</button>
+          </fieldset>
+        </form>
+        <form action="api/shorturl/new_url" method="POST">
+            <fieldset>
+              <legend>URL Shortener: Short url</legend>
+              <label for="URL CODE">URL:</label>
+              <input id="URL CODE" type="text" name="short" placeholder="'012345'" />
+              <button type="submit" value="Go to site">Go to site</button>
+            </fieldset>
+          </form>
+      </section>
+    </main>
+    <footer>
+        <p>By Delight Patrick</p>
+      </footer>
+  </body>
+</html>
